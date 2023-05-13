@@ -1,15 +1,13 @@
-import { headerLinks } from "../data/headerLinks.js";
+import { headerLinks } from "/data/headerLinks.js";
 
-function generateHeaderContent() {
-    let header = document.getElementById("headerWithLinks");
+export function generateHeaderContent() {
+    let header = document.querySelector(".headerWithLinks");
     let headerContent = `
     <div class="logo-container">${generateHeaderLogo()}</div>
     <div class="links-container">${generateHeaderLinks()}</div>`;
 
     header.innerHTML = headerContent;
 }
-
-generateHeaderContent();
 
 /* Generate Content*/
 
@@ -24,7 +22,7 @@ function generateHeaderLinks() {
 function generateHeaderLogo() {
     const htmlInner = `
     <img
-    src="./Images/Icons/blogIcon.png"
+    src="/Images/Icons/blogIcon.png"
     alt="black rounder cloud with smile"/>
     <span class="blogName">My learning journal</span>  `;
     return htmlInner;

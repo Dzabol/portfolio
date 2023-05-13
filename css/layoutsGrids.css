@@ -3,6 +3,7 @@
   --sideGapWidthMax: 35px;
 }
 
+/*** INDEX ****/
 .index-layoutGrid {
   background-color: #ffff;
   box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.8);
@@ -31,4 +32,27 @@
   grid-row-gap: 2.875rem;
   padding: min(2.125em, max(3.5rem, 5%)) 0;
   justify-content: space-between;
+}
+
+/*** About Me ****/
+
+.aboutMe-layoutGrid {
+  background-color: #ffff;
+  box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.8);
+  display: grid;
+  grid-template-columns:
+    minmax(var(--sideGapWidthMin), var(--sideGapWidthMax))
+    1fr
+    1fr
+    1fr
+    minmax(var(--sideGapWidthMin), var(--sideGapWidthMax));
+
+  grid-template-rows: auto auto auto 1fr auto;
+
+  grid-template-areas:
+    ". header header header ."
+    ". aboutMe aboutMe aboutMe ."
+    ". aboutMe-main aboutMe-main aboutMe-main ."
+    ". allArticles allArticles allArticles ."
+    "footer footer footer footer footer";
 }
