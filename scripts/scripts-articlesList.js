@@ -24,6 +24,13 @@ export function generateRequiredNumberOfArticles() {
     articlesContainer.innerHTML = generateManyArticlesHTML(true, numberOfAllArticles, 0, numberOfArticlesToGenerate);
 }
 
+/***** Generate description to article ***** */
+export function generateArticleDescription() {
+    let articleNumber = 6;
+    let descriptionField = document.getElementsByClassName("description")
+
+}
+
 
 /* GENERATE HTML CONTENT */
 
@@ -70,4 +77,7 @@ function generateManyArticlesHTML(generateFromLatestPosts, numberOfAllArticles, 
 
     return htmlContent;
 }
+
+
+
 

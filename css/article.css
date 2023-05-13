@@ -1,0 +1,35 @@
+.headerWithLinks {
+  grid-area: header;
+}
+
+.articleIntroduction {
+  grid-area: articleIntroduction;
+}
+.articleIntroduction .description-container,
+.description {
+  padding: 35px 0px;
+}
+
+.description {
+  grid-area: description;
+}
+
+.recentPosts {
+  grid-area: Title;
+  padding: 0;
+}
+
+.articleIntroduction .article-container {
+  flex-direction: column-reverse;
+}
+
+.extraInformation-container {
+  grid-area: footer;
+}
+
+@media (min-width: 768px) {
+  .articleIntroduction .description-container,
+  .description {
+    padding: 35px 35px;
+  }
+}
