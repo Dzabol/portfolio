@@ -6,7 +6,6 @@
   grid-area: lastArticle;
   box-sizing: border-box;
   position: relative;
-  background-color: pink;
   color: #ffff;
   height: min-content;
 }

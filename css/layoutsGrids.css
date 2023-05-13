@@ -47,12 +47,13 @@
     1fr
     minmax(var(--sideGapWidthMin), var(--sideGapWidthMax));
 
-  grid-template-rows: auto auto auto 1fr auto;
+  grid-template-rows: auto auto auto auto 1fr auto;
 
   grid-template-areas:
     ". header header header ."
     ". aboutMe aboutMe aboutMe ."
     ". aboutMe-main aboutMe-main aboutMe-main ."
+    "Title Title Title Title Title"
     ". allArticles allArticles allArticles ."
     "footer footer footer footer footer";
 }

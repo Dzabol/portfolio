@@ -42,7 +42,12 @@ p {
 }
 
 .recentPosts {
-  grid-area: recentPost;
+  grid-area: Title;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 108.2%;
+  text-align: center;
+  padding-top: 56px;
 }
 
 .extraInformation-container {
