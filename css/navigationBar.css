@@ -1,0 +1,43 @@
+/* ==== HEADER ==== */
+.headerWithLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: fit-content;
+  max-height: fit-content;
+  padding: 0.5rem 0;
+}
+
+/* Logo Container*/
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.blogName {
+  font-size: 0.913rem;
+  font-style: normal;
+  font-weight: 700;
+  padding-left: 0.23em;
+}
+
+/*Links Container*/
+.links-container {
+  display: flex;
+  width: fit-content;
+  justify-content: flex-end;
+}
+
+.links-container a {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 0.94;
+  margin-left: 2.2em;
+  text-decoration: none;
+  width: max-content;
+}

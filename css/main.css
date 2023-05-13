@@ -1,0 +1,88 @@
+body {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 0;
+  color: #0e0e0e;
+  background-color: #202020;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  min-width: 23.438rem;
+  max-width: 800px;
+}
+
+a:visited {
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  align-self: center;
+  justify-self: center;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+/* Article section*/
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-container img {
+  border-radius: 0.3125rem;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  font-size: 0.875rem;
+  line-height: 1.125;
+  padding: 1em 0;
+}
+
+.latestArticleTitle {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.625;
+  color: #141414;
+  margin: 0;
+  padding: 0;
+}
+
+.latestArticleSumary {
+  font-size: 1rem;
+  line-height: 1.25;
+  padding-top: 0.563em;
+}
+
+/* End of Article section*/
+
+footer {
+  background-color: #202020;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 0.75rem;
+  font-style: normal;
+  height: 6.563em;
+}
+
+.siteNameInFooter {
+  color: #ececec;
+  line-height: 0.813em;
+  font-weight: 700;
+  padding: 0.125em;
+}
+
+.copyright {
+  color: #d7d7d7;
+  line-height: 0.938em;
+  padding: 0.125em;
+}

@@ -1,0 +1,43 @@
+.headerWithLinks {
+  grid-area: header;
+}
+
+.latestArticle {
+  grid-area: lastArticle;
+  box-sizing: border-box;
+  position: relative;
+  background-color: pink;
+  color: #ffff;
+  height: min-content;
+}
+
+.latestArticle .description-container {
+  position: absolute;
+  bottom: 25px;
+  padding: 0 35px;
+}
+
+.latestArticle .description-container .date {
+  font-size: clamp(0.75rem, calc(1vw + 0.5rem), 1rem);
+}
+
+.latestArticle .description-container .latestArticleTitle {
+  color: #ffff;
+  font-size: 1.5rem;
+  line-height: 1.1;
+}
+
+footer {
+  grid-area: footer;
+}
+
+@media (max-width: 1024px) {
+  .latestArticle .description-container .latestArticleTitle {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  .latestArticle .description-container .latestArticleSumary {
+    font-size: 0.8em;
+  }
+}
